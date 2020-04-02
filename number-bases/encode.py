@@ -1,8 +1,14 @@
-number = 100
-def b(number):
-    if number > 1: 
-        b(number // 2) 
-    return number % 2
+import sys
 
-print(b(number))
+number = '2'
+def binary(number):
+   """Function to print binary number
+   for the input decimal using recursion"""
+   x = int(number)
+   if x > 1:
+       binary(x // 2)
+   return x % 2
 
+
+if __name__ == "__main__":
+    print(binary(number))       
